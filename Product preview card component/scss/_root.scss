@@ -1,0 +1,31 @@
+:root {
+    font-family: Fraunces;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+$primary-color: hsl(158, 36%, 37%);
+$secondary-color:hsl(30, 38%, 92%);
+$accent: hsl(212, 21%, 14%);
+$text: hsl(228, 12%, 48%);
+
+html, body, .container-fluid {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-color: $secondary-color;
+}
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
+}
+.attribution{
+    align-self: center;
+}
