@@ -29,6 +29,10 @@ body {
   align-self: center;
 }
 
+.button:active {
+  background-color: hsl(159deg, 37%, 29%);
+}
+
 .container {
   max-width: 1440px;
 }
