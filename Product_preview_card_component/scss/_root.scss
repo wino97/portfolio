@@ -2,33 +2,35 @@
     font-family: Fraunces;
     font-size: 14px;
     font-weight: 700;
+    --primary-color: hsl(158, 36%, 37%);
+    --secondary-color: hsl(30, 38%, 92%);
+    --header-color: hsl(212, 21%, 14%);
+    --text-color: hsl(228, 12%, 48%);
+    --active-color: hsl(159, 37%, 29%);
 }
 
-$primary-color: hsl(158, 36%, 37%);
-$secondary-color:hsl(30, 38%, 92%);
-$accent: hsl(212, 21%, 14%);
-$text: hsl(228, 12%, 48%);
 
 html, body, .container-fluid {
     height: 100%;
     margin: 0;
 }
 body {
-    background-color: $secondary-color;
+    background-color: var(--secondary-color);
 }
 .container-fluid {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    max-width: 1440px;
     margin: auto;
+    padding: 1rem;
 }
-.attribution{
+.attribution {
     align-self: center;
 }
 .button:active{
-    background-color: hsl(159, 37%, 29%);
+    background-color: var(--active-color);
 }
