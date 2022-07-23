@@ -5,7 +5,7 @@
     width: fit-content;
     overflow-wrap: break-word;
     position: relative;
-    background-color: var(--card-color);
+    background: linear-gradient(to bottom, var(--card-color), hsl(215, 27%, 12%));
     border-radius: 2rem;
     margin: 1rem;
     padding: 1.8rem;
