@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="text/javascript" src="./js/script.js" defer></script>
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,35 +16,42 @@
   </style>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
+  <main class="container-fluid">
+    <div class="container">
+      <div class="card">
+        <!-- Rating state start -->
+        <div data-rating-side class="rate">
+          <div class="img-container"><img src="images/icon-star.svg" alt="star"></div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+          </p>
+          <ul class="rating-container">
+            <li data-rate="1" data-selected="false"><span>1</span></li>
+            <li data-rate="2" data-selected="false"><span>2</span></li>
+            <li data-rate="3" data-selected="false"><span>3</span></li>
+            <li data-rate="4" data-selected="false"><span>4</span></li>
+            <li data-rate="5" data-selected="false"><span>5</span></li>
+          </ul>
+          <a href="javascript: void(0)" data-submit="null">Submit</a>
+        </div>
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+        <div data-thank-you-side class="thankYou">
+          <div class="img-container"><img src="images/illustration-thank-you.svg" alt="Thank You"></div>
+          <div class="rating">You selected <span data-rating="0"></span> out of 5</div>
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+        <!-- Thank you state end -->
+      </div>
+    </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  </main>
 </body>
 </html>

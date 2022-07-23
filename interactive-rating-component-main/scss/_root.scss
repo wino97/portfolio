@@ -1,0 +1,34 @@
+:root{
+    font-family: Overpass;
+    font-size: 15px;
+    font-weight: 400;
+    --primary-color: hsl(25, 97%, 53%);
+    --secondary-color: hsl(213, 19%, 18%);
+    --card-color: hsl(215, 20%, 16%);
+    --body-color: hsl(216, 12%, 8%);
+    --accent-color: hsl(216, 12%, 54%);
+    --text-color: hsl(217, 12%, 63%);
+}
+
+html, body, .container-fluid{
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body-color);
+}
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1440px;
+    margin: auto;
+    padding: 1rem;
+}
+.attribution {
+    align-self: center;
+}
