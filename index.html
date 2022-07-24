@@ -11,14 +11,10 @@
     <nav>
         <ul>
             <li><a href="https://ctsit.pl">My website</a></li>
-            <?php
-                $dirs = preg_grep('/^([^.])/', scandir(getcwd()));
-                foreach($dirs as $dir){
-                    if( ($dir !== 'index.php') && ($dir !== 'resources') ){
-                        echo '<li><a href="'. $dir .'/">'. ucfirst(preg_replace('/-/', ' ', $dir)) .'</a></li>';
-                    }
-                }
-            ?>
+            <li><a href="faq-accordion-card-main/">Faq accordion card main</a></li>
+            <li><a href="interactive-rating-component-main/">Interactive rating component main</a></li>
+            <li><a href="product-preview-card-component/">Product preview card component</a></li>
+            <li><a href="qr-code-component-main/">Qr code component main</a></li>
         </ul>
     </nav>
 </body>
