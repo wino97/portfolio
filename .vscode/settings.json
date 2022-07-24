@@ -1,0 +1,14 @@
+{
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "php.debug.executablePath": "",
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../../resources/css",
+            "savePathReplacementPairs": null
+        }
+    ]
+}

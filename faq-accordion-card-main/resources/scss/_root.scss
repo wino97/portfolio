@@ -1,0 +1,29 @@
+:root{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background: linear-gradient(to bottom, var(--background-top), var(--background-bottom));
+    --primary-text-color: hsl(238, 29%, 16%);
+    --primary-accent-color: hsl(14, 88%, 65%);
+    --secondary-text-color: hsl(237, 12%, 33%);
+    --secondary-accent-color: hsl(240, 6%, 50%);
+    --background-top: hsl(273, 75%, 66%);
+    --background-bottom: hsl(240, 73%, 65%);
+    --divider-color: hsl(240, 5%, 91%);
+    --padding: 1rem;
+    body{
+        height: 100%;
+        margin: 0;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.attribution {
+    width: 100%;
+    align-self: flex-end;
+    justify-content: center;
+}
