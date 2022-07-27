@@ -1,102 +1,50 @@
-.container-fluid {
+.container-fluid, .container{
     width: 100%;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
     margin-left: auto;
     margin-right: auto;
 }
+.container-fluid .row,
+.container .row{
+    margin-right: calc(0px - var(--padding));
+    margin-left: calc(0px - var(--padding));
+}
 .row{
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.col{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%
 }
 @media (max-width: 575px){
-    body{
-        width: fit-content;
-    }
     .container{
         max-width: 494px;
-        padding-left: var(--padding);
-        padding-right: var(--padding);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .col{
-        flex: 0 0 auto;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 @media (min-width: 576px){
     .container{
         max-width: 494px;
-        padding-left: var(--padding);
-        padding-right: var(--padding);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .col{
-        flex: 0 0 auto;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 @media (min-width: 768px){
         .container{
             max-width: 688px;
-            padding-left: var(--padding);
-            padding-right: var(--padding);
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .col{
-            flex: 0 0 auto;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
         }
 }
 @media (min-width: 992px){
     .container{
         max-width: 912px;
-        padding-left: var(--padding);
-        padding-right: var(--padding);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .col{
-        flex: 0 0 auto;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 @media (min-width: 1200px){
     .container{
         max-width: 1120px;
-        padding-left: var(--padding);
-        padding-right: var(--padding);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .col{
-        flex: 0 0 auto;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media (min-width: 1400px){
-    .container{
-        max-width: 1320px;
-        padding-left: var(--padding);
-        padding-right: var(--padding);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .col{
-        flex: 0 0 auto;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }

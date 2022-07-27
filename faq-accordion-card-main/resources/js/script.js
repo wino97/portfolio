@@ -1,41 +1,28 @@
-let questions = document.querySelectorAll('[data-answer-visible]');
+let accordion = document.querySelectorAll('[data-accordion] li');
 
-questions.forEach((e) =>{
+accordion.forEach((e) =>{
     e.addEventListener("click", function() {
-        if( (this.getAttribute('data-answer-visible') === 'false') && (isVisible() !== true))
-        {
-            this.setAttribute('data-answer-visible', 'true');
-            this.classList.add('active');
-            this.style.maxHeight='100px';
-        }
-        else if(this.getAttribute('data-answer-visible') === 'true')
-        {
-            this.setAttribute('data-answer-visible', 'false');
-            this.classList.remove('active');
-            this.style.maxHeight='55px';
-        }
-        else
-        {
+        if( (!this.classList.contains('active') ) && ( isVisible() == true) ) {
             resetVisiblity();
-            this.setAttribute('data-answer-visible', 'true');
-            this.classList.add('active');
-            this.style.maxHeight='100px';
+            this.classList.toggle('active');
+        }
+        else{
+            this.classList.toggle('active');
         }
     });
 });
 
 function isVisible(){
-    for(let i=0; i < questions.length; i++){
-        if(questions[i].getAttribute('data-answer-visible') === 'true'){
+    for(let i=0; i < accordion.length; i++){
+        if(accordion[i].classList.contains('active')){
             return true;
         }
     }
 }
 
 function resetVisiblity(){
-    questions.forEach((e) =>{
-        e.setAttribute('data-answer-visible', 'false');
+    accordion.forEach((e) =>{
         e.classList.remove('active');
-        e.style.maxHeight='55px';
+        // e.style.maxHeight='55px';
     });
 }
