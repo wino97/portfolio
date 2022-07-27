@@ -156,6 +156,7 @@ main {
   opacity: 0.6;
   width: 100%;
   height: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 @media (min-width: 576px) {
@@ -200,6 +201,10 @@ main {
     max-width: 50%;
     height: auto;
     background: url("./../images/image-header-desktop.jpg");
+    border-radius: 0 10px 10px 0;
+  }
+  .card .img-container::after {
+    border-radius: 0 10px 10px 0;
   }
 }
 @media (min-width: 1200px) {
