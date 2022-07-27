@@ -229,7 +229,7 @@ main {
     z-index: 2;
     position: absolute;
     padding-left: 89px;
-    left: -21.5%;
+    left: -28%;
     bottom: 11%;
     height: 80%;
     width: 100%;
@@ -242,7 +242,7 @@ main {
   .card .img-container .img-shadow {
     z-index: 1;
     position: absolute;
-    padding: 65.3% 0% 43% 121%;
+    padding: 53.5% 0% 31.3% 115%;
     bottom: -42%;
     right: 21%;
     height: 200%;
@@ -321,7 +321,7 @@ main {
     z-index: 3;
     position: absolute;
     bottom: 21%;
-    left: -18%;
+    left: -21%;
     height: 40%;
     width: 40%;
     background-image: url("./../images/illustration-box-desktop.svg");
@@ -333,7 +333,7 @@ main {
     z-index: 2;
     position: absolute;
     padding-left: 89px;
-    left: -17%;
+    left: -22%;
     bottom: 11%;
     height: 80%;
     width: 100%;
@@ -346,7 +346,7 @@ main {
   .card .img-container .img-shadow {
     z-index: 1;
     position: absolute;
-    padding: 57% 0% 30% 110%;
+    padding: 46.7% 0% 20.8% 105.4%;
     bottom: -37%;
     right: 10%;
     height: 200%;
