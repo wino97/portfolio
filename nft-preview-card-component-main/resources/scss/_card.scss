@@ -1,0 +1,135 @@
+main{
+    height: 100%;
+    align-items: end;
+}
+.card{
+    margin: 0 auto;
+    padding: var(--padding);
+    background-color: var(--background-card);
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, .3);
+    max-width: 100%;
+    .img-container{
+        position: relative;
+        width: auto;
+        height: 250px;
+        background: url('./../images/image-equilibrium.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+    }
+    .img-container::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary-accent-color);
+        opacity: 0;
+        transition: opacity 1s;
+        border-radius: 10px;
+    }
+    .img-container::after{
+        content: '';
+        position: absolute;
+        top: 105px;
+        left: 110px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary-accent-color);
+        background: url('./../images/icon-view.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .img-container:hover::before{
+        cursor: pointer;
+        opacity: .5;
+    }
+    .img-container:hover::after{
+        cursor: pointer;
+        opacity: 1;
+    }
+    h1{
+        margin: 1rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+        transition: color 1s;
+    }
+    h1:hover{
+        cursor: pointer;
+        color: var(--primary-accent-color);
+    }
+    p{
+        margin: 0;
+        font-size: 17px;
+        color: var(--primary-text-color);
+    }
+    .auction{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin-bottom: .5rem;
+        font-size: 14px;
+        border-bottom: 1px solid var(--divider-color);
+        img{
+            display: inline;
+            max-height: 18px;
+            margin-right: .5rem;
+            vertical-align: sub;
+        }
+        .price{
+            font-weight: 500;
+            color: var(--primary-accent-color);
+        }
+        .time{
+            font-weight: 500;
+            color: var(--primary-text-color);
+        }
+    }
+    .credits{
+        display: flex;
+        align-items: center;
+        padding: .5rem 0;
+        font-size: 14px;
+        color: var(--primary-text-color);
+        word-spacing: .1rem;
+        img{
+            width: 25px;
+            margin-right: 1rem;
+            border: 1px solid white;
+            border-radius: 100%;
+        }
+        .name{
+            color: white;
+            font-weight: 400;
+            transition: color 1s;
+        }
+        .name:hover{
+            cursor: pointer;
+            color: var(--primary-accent-color);
+        }
+    }
+}
+@media (min-width: 576px){
+    .card{
+        max-width: 65%;
+    }
+}
+@media (min-width: 768px){
+    .card{
+        max-width: 45%;
+    }
+}
+@media (min-width: 992px){
+    .card{
+        max-width: 33%;
+    }
+}
+@media (min-width: 1200px){
+    .card{
+        max-width: 27%;
+    }
+}

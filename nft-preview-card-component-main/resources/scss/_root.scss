@@ -1,0 +1,27 @@
+:root{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    background: var(--background);
+    --primary-text-color: hsl(215, 51%, 70%);
+    --primary-accent-color: hsl(178, 100%, 50%);
+    --background: hsl(217, 54%, 11%);
+    --background-card: hsl(216, 50%, 16%);
+    --divider-color: hsl(215, 32%, 27%);
+    --padding: 1.2rem;
+    body{
+        height: 100%;
+        margin: 0;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.attribution {
+    width: 100%;
+    align-self: flex-end;
+    justify-content: center;
+}
