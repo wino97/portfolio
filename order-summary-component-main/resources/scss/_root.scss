@@ -1,0 +1,27 @@
+:root{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--background);
+    --primary-text-color: hsl(223, 47%, 23%);
+    --primary-accent-color: hsl(245, 75%, 52%);
+    --background: hsl(225, 100%, 94%);
+    --background-card: hsl(225, 100%, 98%);
+    --text-color: hsl(224, 23%, 55%);
+    --padding: 1.5rem;
+    body{
+        height: 100%;
+        margin: 0;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.attribution {
+    width: 100%;
+    align-self: flex-end;
+    justify-content: center;
+}
