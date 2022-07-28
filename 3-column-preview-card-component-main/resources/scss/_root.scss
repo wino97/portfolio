@@ -1,0 +1,27 @@
+:root{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--very-light-gray);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --padding: 1.5rem;
+    body{
+        height: 100%;
+        margin: 0;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.attribution {
+    width: 100%;
+    align-self: flex-end;
+    justify-content: center;
+}
