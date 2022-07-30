@@ -1,0 +1,225 @@
+:root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--primary);
+  --primary: hsl(185, 75%, 39%);
+  --primary-heading: hsl(229, 23%, 23%);
+  --priamry-text: hsl(227, 10%, 46%);
+  --divider: hsl(0, 0%, 59%);
+  --padding: 1.5rem;
+}
+:root body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.attribution {
+  width: 100%;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.container-fluid, .container {
+  width: 100%;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid .row,
+.container .row {
+  margin-right: calc(0px - var(--padding));
+  margin-left: calc(0px - var(--padding));
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 494px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 494px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 688px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 912px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+body::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("./../images/bg-pattern-top.svg");
+}
+
+body::after {
+  content: "";
+  background: url("./../images/bg-pattern-bottom.svg");
+}
+
+main {
+  height: 100%;
+  align-items: end;
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 5rem auto;
+  background-color: var(--background-card);
+  border-radius: 10px;
+}
+.card .col {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.card .col img {
+  max-height: 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.card .col h1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Big Shoulders Display", "san-serif";
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+.card .col p {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  color: var(--transparent-white);
+}
+.card .col a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.8rem 2.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: var(--very-light-gray);
+}
+
+.col:nth-child(1) {
+  background-color: var(--bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+.col:nth-child(1) a {
+  color: var(--bright-orange);
+  border: 1px solid var(--bright-orange);
+}
+.col:nth-child(1) a:hover {
+  cursor: pointer;
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+  border: 1px solid var(--very-light-gray);
+}
+
+.col:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+.col:nth-child(2) a {
+  color: var(--dark-cyan);
+  border: 1px solid var(--dark-cyan);
+}
+.col:nth-child(2) a:hover {
+  cursor: pointer;
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+  border: 1px solid var(--very-light-gray);
+}
+
+.col:nth-child(3) {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+.col:nth-child(3) a {
+  color: var(--very-dark-cyan);
+  border: 1px solid var(--very-dark-cyan);
+}
+.col:nth-child(3) a:hover {
+  cursor: pointer;
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
+  border: 1px solid var(--very-light-gray);
+}
+
+@media (min-width: 576px) {
+  .card {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+  .col:nth-child(1) {
+    border-radius: 10px 0 0 0;
+  }
+  .col:nth-child(2) {
+    border-radius: 0 10px 0 0;
+  }
+  .col:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    max-width: 100%;
+  }
+  .card .col p {
+    margin-bottom: 6rem;
+  }
+  .col:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+  }
+  .col:nth-child(2) {
+    border-radius: 0 0 0 0;
+  }
+  .col:nth-child(3) {
+    border-radius: 0 10px 10px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=styles.css.map */

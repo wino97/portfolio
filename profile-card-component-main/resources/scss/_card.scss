@@ -1,10 +1,21 @@
+
+body::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: url('./../images/bg-pattern-top.svg');
+}
+body::after{
+    content: '';
+    background: url('./../images/bg-pattern-bottom.svg');
+}
 main{
     height: 100%;
     align-items: end;
 }
 .card{
     display: flex;
-    flex-flow: row wrap;//
+    flex-flow: column wrap;
     margin: 5rem auto;
     background-color: var(--background-card);
     border-radius: 10px;
@@ -120,6 +131,6 @@ main{
 }
 @media (min-width: 1200px){
     .card{
-        max-width: 84%;
+        max-width: 50%;
     }
 }

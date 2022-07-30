@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lato:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon.ico">
     <title>Portfolio</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="https://ctsit.pl">My website</a></li>
-            <li><a href="product-preview-card-component/">Product preview card component</a></li>
-            <li><a href="qr-code-component-main/">Qr code component main</a></li>
-            <li><a href="interactive-rating-component-main/">Interactive rating component main</a></li>
-            <li><a href="faq-accordion-card-main/">Faq accordion card main</a></li>
-            <li><a href="nft-preview-card-component-main/">Nft preview card component main</a></li>
-            <li><a href="order-summary-component-main/">Order summary component main</a></li>
-            <li><a href="stats-preview-card-component-main/">Stats preview card component main</a></li>
-            <li><a href="3-column-preview-card-component-main/">3 column preview card component main</a></li>
+    <nav class="nav-menu">
+        <ul class="nav">
+            <li class="nav-item"><a href="https://ctsit.pl"><img class="logo" alt="logo" src="./resources/images/logo.png"></a></li>
+            <li class="nav-item"><a href="https://ctsit.pl">My website</a></li>
         </ul>
     </nav>
+    <main class="row">
+        <section class="container cards">
+            <div class="col"><div class="card"><a href="product-preview-card-component/"><img class="card-img" src="./resources/images/portfolio/product-preview-card-component.png" alt="Product preview card component"></a></div></div>
+            <div class="col"><div class="card"><a href="qr-code-component-main/"><img class="card-img" src="./resources/images/portfolio/qr-code-component.png" alt="Qr code component"></a></div></div>
+            <div class="col"><div class="card"><a href="interactive-rating-component-main/"><img class="card-img" src="./resources/images/portfolio/product-preview-card-component.png" alt="Interactive rating component"></a></div></div>
+            <div class="col"><div class="card"><a href="faq-accordion-card-main/"><img class="card-img" src="./resources/images/portfolio/interactive-rating-component.png" alt="Faq accordion card"></a></div></div>
+            <div class="col"><div class="card"><a href="nft-preview-card-component-main/"><img class="card-img" src="./resources/images/portfolio/nft-preview-card-component.png" alt="Nft preview card component"></a></div></div>
+            <div class="col"><div class="card"><a href="order-summary-component-main/"><img class="card-img" src="./resources/images/portfolio/order-summary-component.png" alt="Order summary component"></a></div></div>
+            <div class="col"><div class="card"><a href="stats-preview-card-component-main/"><img class="card-img" src="./resources/images/portfolio/stats-preview-card-component.png" alt="Stats preview card component"></a></div></div>
+            <div class="col"><div class="card"><a href="3-column-preview-card-component-main/"><img class="card-img" src="./resources/images/portfolio/3-column-preview-card-component.png" alt="3 column preview card component"></a></div></div>
+            <div class="col"><div class="card"><a href="profile-card-component-main/"><img class="card-img" src="./resources/images/portfolio/profile-card-component.png" alt="Profile card component"></a></div></div>
+        </section>
+    </main>
 </body>
 
 </html>

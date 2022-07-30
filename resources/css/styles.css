@@ -1,0 +1,154 @@
+:root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--primary);
+  --primary-color: #0061EB;
+  --secondary-color: #1979FF;
+  --accent-color: #EB9B00;
+  --text-color: #7A7A7A;
+  --padding: 1rem;
+}
+:root body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid, .container {
+  width: 100%;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid .row,
+.container .row {
+  margin-right: calc(0px - var(--padding));
+  margin-left: calc(0px - var(--padding));
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 494px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 494px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 688px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 912px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+.nav-menu {
+  display: flex;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.nav-menu .nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.nav-menu .nav .logo {
+  height: 50px;
+}
+.nav-menu .nav .nav-item {
+  display: inline-block;
+}
+
+main.row {
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.cards {
+  display: flex;
+  flex-flow: column wrap;
+}
+.cards .card {
+  min-width: 300px;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.cards .card a {
+  display: block;
+}
+.cards .card .card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+.cards .card .card-img:hover {
+  border: 3px solid var(--primary-color);
+  transform: scale(1.1);
+}
+
+@media (min-width: 576px) {
+  .cards {
+    flex-direction: row;
+  }
+  .cards .card {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

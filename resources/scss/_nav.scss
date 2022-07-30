@@ -1,0 +1,24 @@
+.nav-menu{
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+    .nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 1rem;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, .2);
+        .logo{
+            height: 50px;
+        }
+        .nav-item{
+            display: inline-block;
+        }
+    }
+}
